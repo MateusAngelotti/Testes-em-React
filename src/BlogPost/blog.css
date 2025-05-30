@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    font-family: sans-serif;
+}
+
+.login-box {
+    background-color: lightgray;
+    border: 1px solid #ddd;
+    padding: 32px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1);
+}
+
+.public-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    outline: 0;
+    margin-top: 16px;
+}
+
+.login-button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.login-page-wrapper {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page-flex {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+/*post-list*/
+
+.post-list-container {
+    max-width: 800px;
+    margin: 0;
+    padding: 32px;
+    width: 100%;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center;
+  text-align: center;
+  gap: 16px; /* espaço entre os elementos */
+  margin-bottom: 20px;
+}
+
+.admin-container {
+  width: 100%;
+}
+
+.admin-page-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.post-list-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.post-header h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+.post-home-link {
+    font-size: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.post-home-link:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.post-input,
+.post-textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: 0;
+}
+
+.post-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.post-button {
+    align-self: flex-start;
+    padding: 8px 16px;
+    background-color: rgb(18, 18, 121);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.post-button:hover {
+    background-color: rgb(28, 28, 218);
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 400px;
+}
+
+.post-card {
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.05);
+}
+
+.post-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 8px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.delete-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*post-detail*/
+
+.post-detail-container {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 16px;
+    font-family: sans-serif;
+}
+
+.go-to-admin-button {
+    font-size: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    margin-right: 16px;
+}
+
+.post-title {
+    font-size: 40px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.post-content {
+    line-height: 1.6;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.post-content h2 {
+    margin-top: 24px;
+}
+
+.post-content p {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.post-content a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.post-content code {
+    background-color: #f4f4f4;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-family: monospace;
+}
+
+/*comment-section*/
+
+.comment-section {
+    border-top: 1px solid #ddd;
+    margin-top: 32px;
+    padding-top: 16px;
+    overflow: hidden;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.comment-input,
+.comment-textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 80%;
+    outline: 0;
+}
+
+.comment-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.comment-button {
+    align-self: flex-start;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.comment-button:hover {
+    background-color: #0056b3;
+}
+
+.comment-list {
+    list-style: none;
+    padding-top: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.comment-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-item strong {
+    color: #333;
+}
+
+.comment-section h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.comment-list li {
+    margin: 0 20px;
+    font-size: 18px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.comment-list button {
+    margin: 16px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nenhum-post {
+    text-align: center;
+    font-size: 18px;
+    color: #534c4c;
+    background-color: #e2d6d6;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    margin-top: 32px;
+    font-style: italic;
+}
+
+
+.admin-container {
+  width: 100%;
+}
+
+.admin-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}

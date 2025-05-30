@@ -13,6 +13,7 @@ import Checklist from '../viajem-check';
 import GeradorNumerico from '../numero-aleartório';
 import FormulárioResponsivo from '../formulário';
 import Cadastrar from '../cadastro';
+import UsuarioApi from '../usuarios';
 
 function Rotas(){
     return(
@@ -32,6 +33,8 @@ function Rotas(){
                 <Route path='/gerador-num' element={<GeradorNumerico/>} />
                 <Route path='/formulario' element={<FormulárioResponsivo/>} />
                 <Route path='/cadastro' element={<Cadastrar/>} />
+                <Route path='/usuarios' element={<UsuarioApi/>} />
+                
 
                 
             </Routes>

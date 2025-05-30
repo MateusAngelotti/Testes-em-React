@@ -51,6 +51,15 @@ export default function Dashboard() {
     navigate('/cadastro');
   }
 
+    const irParaBlog = () =>{
+    navigate('/blog');
+  }
+
+  const irParaUsuarios =()=>{
+    navigate('/usuarios')
+  }
+
+
 
   return(
     <div>
@@ -91,6 +100,12 @@ export default function Dashboard() {
       <br/>
       <br/>
       <button onClick={irParaCadastro}>Ir para Cadastrar</button>
+      <br/>
+      <br/>
+      <button onClick={irParaBlog}>Ir para o Blog</button>
+      <br/>
+      <br/>
+      <button onClick={irParaUsuarios}>Ir pra User Api</button>
     </div>
     
   ) 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 
-const API_KEY = 'cd3de543e638bcb1d0786089c9ae59ae'
+const API_KEY = 'API_KEY'
 
 const GraficoPrevisao = ({city}) => {
     const[data,setData] = useState([]);
